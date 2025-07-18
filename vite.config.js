@@ -7,7 +7,7 @@ export default defineConfig({
   root: path.resolve(__dirname, './'),
   base: './',  // Using relative paths for GitHub Pages deployment
   build: {
-    outDir: 'dist',
+    outDir: '',
   },
   server: {
     port: 3000,
