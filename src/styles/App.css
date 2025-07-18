@@ -1,0 +1,15 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+  padding-top: 80px; /* This should match your header height */
+}
+
+/* For pages that need a different top padding */
+.hero-section .main-content {
+  padding-top: 0;
+}

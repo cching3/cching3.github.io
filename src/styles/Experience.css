@@ -1,0 +1,124 @@
+.experience {
+  background-color: var(--background-color);
+  padding: 5rem 0;
+  min-height: 50vh;
+}
+
+.timeline {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--primary-color), var(--secondary-color));
+  opacity: 0.3;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 3rem;
+  padding-left: 2rem;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -6px;
+  top: 0;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  box-shadow: 0 0 0 4px rgba(108, 99, 255, 0.1);
+}
+
+.timeline-content {
+  background-color: var(--card-bg);
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+  box-shadow: var(--box-shadow);
+  transition: var(--transition);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.timeline-content:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--box-shadow-hover);
+}
+
+.experience-header {
+  margin-bottom: 1rem;
+}
+
+.experience-header h3 {
+  font-family: var(--heading-font);
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-primary);
+}
+
+.company-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.25rem;
+}
+
+.company-name {
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.location {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.period {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+}
+
+.achievements {
+  padding-left: 1.2rem;
+}
+
+.achievements li {
+  margin-bottom: 0.75rem;
+  line-height: 1.6;
+  color: var(--text-primary);
+  position: relative;
+}
+
+.achievements li::before {
+  content: '•';
+  position: absolute;
+  left: -1.2rem;
+  color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+  .timeline::before {
+    left: 15px;
+  }
+  
+  .timeline-item {
+    padding-left: 2.5rem;
+  }
+  
+  .timeline-item::before {
+    left: 9px;
+  }
+  
+  .company-info {
+    flex-direction: column;
+  }
+}

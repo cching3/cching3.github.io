@@ -1,0 +1,138 @@
+import React from 'react';
+import '../styles/Skills.css';
+
+function Skills() {
+  const skills = {
+    frontend: [
+      "HTML5",
+      "CSS3/SASS",
+      "JavaScript (ES6+)",
+      "TypeScript",
+      "React"
+    ],
+    backend: [
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "REST APIs"
+    ],
+    cloudTools: [
+      "AWS Lambda",
+      "S3",
+      "API Gateway",
+      "Git/GitHub",
+      "Webpack",
+      "npm/yarn",
+      "VS Code"
+    ],
+    design: [
+      "Figma",
+      "Adobe XD"
+    ],
+    languages: [
+      "Python",
+      "C++",
+      "Java",
+      "Julia"
+    ],
+    other: [
+      "PyTorch",
+      "Microsoft Copilot",
+      "Microsoft Excel"
+    ],
+    spokenLanguages: [
+      "Cantonese (Proficient)", 
+      "English (Proficient)", 
+      "Mandarin (Proficient)"
+    ],
+    interests: [
+      "Healthcare", "Policy", "Debate", "Museum hopping", 
+      "Volleyball", "Piano (Chopin)", "Hiking", 
+      "Golden State Warriors", "49ers"
+    ]
+  };
+
+  return (
+    <section id="skills" className="skills-section fade-in">
+      <div className="container">
+        <h2 className="section-title">Skills & Interests</h2>
+        
+        <div className="skills-container">
+          <div className="skill-category">
+            <h3>Frontend</h3>
+            <div className="skill-tags">
+              {skills.frontend.map((skill, index) => (
+                <span key={index} className="skill-tag">{skill}</span>
+              ))}
+            </div>
+          </div>
+          
+          <div className="skill-category">
+            <h3>Backend</h3>
+            <div className="skill-tags">
+              {skills.backend.map((skill, index) => (
+                <span key={index} className="skill-tag">{skill}</span>
+              ))}
+            </div>
+          </div>
+          
+          <div className="skill-category">
+            <h3>Cloud & Tools</h3>
+            <div className="skill-tags">
+              {skills.cloudTools.map((tool, index) => (
+                <span key={index} className="skill-tag">{tool}</span>
+              ))}
+            </div>
+          </div>
+          
+          <div className="skill-category">
+            <h3>Design</h3>
+            <div className="skill-tags">
+              {skills.design.map((tool, index) => (
+                <span key={index} className="skill-tag">{tool}</span>
+              ))}
+            </div>
+          </div>
+          
+          <div className="skill-category">
+            <h3>Languages</h3>
+            <div className="skill-tags">
+              {skills.languages.map((language, index) => (
+                <span key={index} className="skill-tag">{language}</span>
+              ))}
+            </div>
+          </div>
+          
+          <div className="skill-category">
+            <h3>Other</h3>
+            <div className="skill-tags">
+              {skills.other.map((item, index) => (
+                <span key={index} className="skill-tag">{item}</span>
+              ))}
+            </div>
+          </div>
+          
+          <div className="skill-category">
+            <h3>Spoken Languages</h3>
+            <div className="skill-tags">
+              {skills.spokenLanguages.map((language, index) => (
+                <span key={index} className="skill-tag">{language}</span>
+              ))}
+            </div>
+          </div>
+          
+          <div className="skill-category">
+            <h3>Interests</h3>
+            <div className="skill-tags">
+              {skills.interests.map((interest, index) => (
+                <span key={index} className="skill-tag">{interest}</span>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export default Skills;

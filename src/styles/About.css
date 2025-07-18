@@ -1,0 +1,129 @@
+.about-page {
+  padding: 8rem 0 5rem;
+}
+
+.page-title {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  text-align: center;
+  position: relative;
+}
+
+.page-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background-color: var(--primary-color);
+  border-radius: 2px;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.about-image {
+  position: sticky;
+  top: 100px;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.about-text h2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+}
+
+.about-text p {
+  color: var(--secondary-color);
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.education-item {
+  margin-bottom: 1.5rem;
+}
+
+.education-item h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.education-item p {
+  color: var(--secondary-color);
+  font-style: italic;
+}
+
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.skill-category h3 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+}
+
+.skills-list li {
+  padding: 0.5rem 0;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.skills-list li::before {
+  content: '▹';
+  position: absolute;
+  left: 0;
+  color: var(--primary-color);
+}
+
+/* Responsive styles */
+@media (max-width: 992px) {
+  .about-content {
+    grid-template-columns: 1fr;
+  }
+  
+  .about-image {
+    position: relative;
+    top: 0;
+    max-width: 400px;
+    margin: 0 auto 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .skills-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  .skills-container {
+    grid-template-columns: 1fr;
+  }
+}
