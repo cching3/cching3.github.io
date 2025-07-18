@@ -46,7 +46,7 @@ function Hero() {
             <div className="hero-image">
               
               <div className="placeholder-image">
-                <img src="assets/images/profile.jpg" alt="profile" />
+                <img src="./assets/images/profile.jpg" alt="profile" />
               </div>
             </div>
           </div>
