@@ -8,6 +8,11 @@ export default defineConfig({
   base: './',  // Using relative paths for GitHub Pages deployment
   build: {
     outDir: 'dist',
+    rollupOptions: {
+      input: {
+        main: path.resolve(__dirname, 'index.html'),
+      },
+    },
   },
   server: {
     port: 3000,
