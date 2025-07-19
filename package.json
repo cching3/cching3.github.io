@@ -19,7 +19,7 @@
     "predeploy": "vite build",
     "deploy": "gh-pages -d dist"
   },
-  "homepage": "https://cching3.github.io/personal-portfolio/",
+  "homepage": "https://cching3.github.io/",
   "eslintConfig": {
     "extends": [
       "react-app",
