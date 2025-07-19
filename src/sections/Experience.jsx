@@ -2,7 +2,7 @@ import React from 'react';
 import '../styles/Experience.css';
 
 function Experience() {
-  const experiences = [
+  const experience = [
     {
       id: 1,
       company: "Amazon",
@@ -90,7 +90,7 @@ function Experience() {
       <div className="container">
         <h2 className="section-title">Experience</h2>
         <div className="timeline">
-          {experiences.map((exp) => (
+          {experience.map((exp) => (
             <div key={exp.id} className="timeline-item">
               <div className="timeline-content">
                 <div className="experience-header">

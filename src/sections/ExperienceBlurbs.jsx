@@ -2,7 +2,7 @@ import React from 'react';
 import '../styles/ExperienceBlurbs.css';
 
 function ExperienceBlurbs() {
-  const experiences = [
+  const experience = [
     {
       id: 1,
       company: "Amazon",
@@ -41,11 +41,11 @@ function ExperienceBlurbs() {
   ];
 
   return (
-    <section id="experiences" className="experience-blurbs fade-in">
+    <section id="experience" className="experience-blurbs fade-in">
       <div className="container">
         <h2 className="section-title">Experience Highlights</h2>
         <div className="blurbs-container">
-          {experiences.map(exp => (
+          {experience.map(exp => (
             <div key={exp.id} className="experience-blurb">
               <div className="blurb-header">
                 <h3>{exp.position}</h3>

@@ -20,8 +20,8 @@ function Hero() {
               My name is Charis (pronounced like 'charismatic' without the matic)
             </p>
             <div className="hero-buttons">
-              <a href="#experiences" className="btn btn-primary">
-                <span>My Experiences</span>
+              <a href="#experience" className="btn btn-primary">
+                <span>My experience</span>
               </a>
               <a href="#projects" className="btn btn-primary">
                 <span>View My Projects</span>
