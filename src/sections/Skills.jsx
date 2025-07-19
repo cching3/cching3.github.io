@@ -3,42 +3,53 @@ import '../styles/Skills.css';
 
 function Skills() {
   const skills = {
-    frontend: [
-      "HTML5",
-      "CSS3/SASS",
-      "JavaScript (ES6+)",
+    languages: [
+      "Python",
+      "C++",
+      "Java",
+      "Julia",
       "TypeScript",
-      "React"
+      "JavaScript"
     ],
     backend: [
       "Node.js",
       "Express",
-      "MongoDB",
-      "REST APIs"
+      "REST APIs",
     ],
+
+    frontend: [
+      "HTML5",
+      "CSS3/SASS",
+      "JavaScript",
+      "React",
+      "Next.js",
+      "Vite"
+    ],
+
     cloudTools: [
       "AWS Lambda",
       "S3",
       "API Gateway",
       "Git/GitHub",
-      "Webpack",
-      "npm/yarn",
-      "VS Code"
+      "VS Code",
+      "Linux/Ubuntu"
     ],
+
     design: [
       "Figma",
-      "Adobe XD"
+      "Adobe XD",
+      "Canva"
     ],
-    languages: [
-      "Python",
-      "C++",
-      "Java",
-      "Julia"
-    ],
+
     other: [
       "PyTorch",
       "Microsoft Copilot",
-      "Microsoft Excel"
+      "Microsoft Excel",
+      "Pandas",
+      "NumPy",
+      "Matplotlib",
+      "OpenAI API",
+      "Jupyter Notebook",
     ],
     spokenLanguages: [
       "Cantonese (Proficient)", 
@@ -46,7 +57,7 @@ function Skills() {
       "Mandarin (Proficient)"
     ],
     interests: [
-      "Healthcare", "Policy", "Debate", "Museum hopping", 
+      "Photography", "Debate", "Museum hopping", 
       "Volleyball", "Piano (Chopin)", "Hiking", 
       "Golden State Warriors", "49ers"
     ]
@@ -59,14 +70,13 @@ function Skills() {
         
         <div className="skills-container">
           <div className="skill-category">
-            <h3>Frontend</h3>
+            <h3>Languages</h3>
             <div className="skill-tags">
-              {skills.frontend.map((skill, index) => (
-                <span key={index} className="skill-tag">{skill}</span>
+              {skills.languages.map((language, index) => (
+                <span key={index} className="skill-tag">{language}</span>
               ))}
             </div>
           </div>
-          
           <div className="skill-category">
             <h3>Backend</h3>
             <div className="skill-tags">
@@ -76,6 +86,15 @@ function Skills() {
             </div>
           </div>
           
+
+          <div className="skill-category">
+            <h3>Frontend</h3>
+            <div className="skill-tags">
+              {skills.frontend.map((skill, index) => (
+                <span key={index} className="skill-tag">{skill}</span>
+              ))}
+            </div>
+          </div>
           <div className="skill-category">
             <h3>Cloud & Tools</h3>
             <div className="skill-tags">
@@ -96,15 +115,6 @@ function Skills() {
           
           <div className="skill-category">
             <h3>Languages</h3>
-            <div className="skill-tags">
-              {skills.languages.map((language, index) => (
-                <span key={index} className="skill-tag">{language}</span>
-              ))}
-            </div>
-          </div>
-          
-          <div className="skill-category">
-            <h3>Other</h3>
             <div className="skill-tags">
               {skills.other.map((item, index) => (
                 <span key={index} className="skill-tag">{item}</span>

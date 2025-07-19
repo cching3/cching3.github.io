@@ -1,0 +1,44 @@
+.about-preview {
+  background-color: var(--light-gray);
+  padding: 5rem 0;
+}
+
+.about-preview-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-preview-text {
+  text-align: left;
+}
+
+.about-preview-text p {
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
+  font-size: 1.1rem;
+}
+
+.about-preview-text h3 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+  font-size: 1.5rem;
+}
+
+.education-date {
+  float: right;
+  font-style: italic;
+  color: var(--secondary-color);
+}
+
+.about-preview-text strong {
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .education-date {
+    float: none;
+    display: block;
+    margin-top: 0.25rem;
+  }
+}

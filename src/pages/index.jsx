@@ -4,6 +4,7 @@ import Projects from '../sections/Projects.jsx';
 import Contact from '../sections/Contact.jsx';
 import Skills from '../sections/Skills.jsx';
 import ExperienceBlurbs from '../sections/ExperienceBlurbs.jsx';
+import '../styles/AboutPreview.css';
 
 function Home() {
   useEffect(() => {
@@ -22,15 +23,32 @@ function Home() {
           <div className="about-preview-content">
             <div className="about-preview-text">
               <p>
-                I'm a passionate web developer focused on creating beautiful, 
-                functional, and user-friendly websites and applications.
+                 Hi! I'm a student studying computer science and engineering at the Massachusetts Institute of Technology. 
+                 I'm passionate about developing innovative solutions through technology. 
+                 Through my internships at Amazon and research in computational biology, 
+                 I've gained valuable experience applying technical skills to solve real-world problems.
+
               </p>
               <p>
-                With expertise in modern frontend technologies like React and 
-                a strong foundation in design principles, I build digital experiences 
-                that users love.
+                Apart from my academic interests, I enjoy hiking, photography, and watching all sports.
               </p>
-              <a href="/about" className="btn btn-primary">Learn More About Me</a>
+              
+              <h3>EDUCATION</h3>
+              <p>
+                <strong>Massachusetts Institute of Technology – Cambridge, MA</strong> <span className="education-date">Expected May 2027</span><br />
+                Bachelor of Science, Computer Science & Engineering
+              </p>
+              <p>
+                <strong>Relevant courses:</strong> Software Construction, Fundamentals of Programming, Intro to Machine Learning, 
+                Intro to Algorithms, Linear Algebra, Math for Computer Science, Differential Equations, 
+                Intro to Computer Science Programming in Python
+              </p>
+              <p>
+                <strong>Honors/Awards:</strong> Amazon Future Engineer Scholar, Lockheed Martin Scholar, 
+                Deloitte Foundation SWE Scholar, California Institute for Regenerative Medicine Scholar, 
+                National Merit Scholar
+              </p>
+              {/* <a href="/about" className="btn btn-primary">Learn More About Me</a> */}
             </div>
           </div>
         </div>

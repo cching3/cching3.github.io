@@ -30,6 +30,13 @@ function ExperienceBlurbs() {
       position: "Software Development Intern",
       period: "Jun 2024 – Aug 2024",
       description: "Developed a company-wide office hour scheduler for 150,000+ employees, increasing schedule efficiency by 10%."
+    },
+    {
+      id: 5,
+      company: "Martin Lab, MIT",
+      position: "Research Assistant",
+      period: "Sep 2023 – May 2024",
+      description: "Conducted computational analysis of tissue folding in mouse development; results presented at the 2024 NESDB conference."
     }
   ];
 
@@ -51,9 +58,9 @@ function ExperienceBlurbs() {
             </div>
           ))}
         </div>
-        <div className="experience-cta">
+        {/* <div className="experience-cta">
           <a href="/experience" className="btn btn-secondary">View Full Experience</a>
-        </div>
+        </div> */}
       </div>
     </section>
   );

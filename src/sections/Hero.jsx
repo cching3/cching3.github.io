@@ -14,10 +14,10 @@ function Hero() {
         <div className="hero-grid">
           <div className="hero-content fade-in">
             <h1 className="hero-title">
-              <span className="gradient-text">Welcome</span>
+              <span className="gradient-text">Welcome!</span>
             </h1>
             <p className="hero-description">
-              I design and develop modern web applications using AWS, React, and TypeScript, combining technical expertise with research experience in computational biology and machine learning.
+              My name is Charis (pronounced like 'charismatic' without the matic)
             </p>
             <div className="hero-buttons">
               <a href="#experiences" className="btn btn-primary">

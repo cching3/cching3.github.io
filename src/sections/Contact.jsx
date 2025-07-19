@@ -25,20 +25,37 @@ function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault();
     
-    // This is where you would typically send the form data to a server
-    // For now, we'll just simulate a successful submission
-    
-    setFormStatus({
-      submitted: true,
-      error: false,
-      message: 'Thank you for your message! I will get back to you soon.'
-    });
-    
-    // Reset form after submission
-    setFormData({
-      name: '',
-      email: '',
-      message: ''
+    // Send form data to Formspree
+    fetch('https://formspree.io/f/meozeopb', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(formData)
+    })
+    .then(response => {
+      if (response.ok) {
+        setFormStatus({
+          submitted: true,
+          error: false,
+          message: 'Thank you for your message! I will get back to you soon.'
+        });
+        // Reset form after submission
+        setFormData({
+          name: '',
+          email: '',
+          message: ''
+        });
+      } else {
+        throw new Error('Form submission failed');
+      }
+    })
+    .catch(error => {
+      setFormStatus({
+        submitted: true,
+        error: true,
+        message: 'Oops! There was a problem submitting your form. Please try again later.'
+      });
     });
   };
 
@@ -81,7 +98,7 @@ function Contact() {
                 {formStatus.message}
               </div>
             ) : (
-              <form className="contact-form" onSubmit={handleSubmit}>
+              <form className="contact-form" onSubmit={handleSubmit} action="https://formspree.io/f/meozeopb" method="POST">
                 <div className="form-group">
                   <label htmlFor="name">Name</label>
                   <input
