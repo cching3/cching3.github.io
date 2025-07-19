@@ -4,9 +4,10 @@ import path from 'path';
 
 export default defineConfig({
   plugins: [react()],
-  base: './',
+  root: path.resolve(__dirname, './'),
+  base: './',  // Using relative paths for GitHub Pages deployment
   build: {
-    outDir: '',
+    outDir: 'dist',
   },
   server: {
     port: 3000,
@@ -14,4 +15,12 @@ export default defineConfig({
   resolve: {
     extensions: ['.js', '.jsx', '.ts', '.tsx']
   },
+  optimizeDeps: {
+    include: ['react', 'react-dom', 'react-router-dom']
+  },
+  esbuild: {
+    loader: 'jsx',
+    include: /\.jsx?$/,
+    exclude: []
+  }
 });
