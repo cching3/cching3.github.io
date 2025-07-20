@@ -6,7 +6,7 @@ import Home from './pages/index.jsx';
 import About from './pages/about.jsx';
 import './styles/globals.css';
 import './styles/App.css';
-import Experience from './sections/Experience.jsx';
+import Experiences from './sections/Experience.jsx';
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="about" element={<About />} />
-            <Route path='experience' element={<Experience />} />
+            <Route path='experiences' element={<Experiences />} />
             <Route path='contact' element={<About />} />
           </Routes>
         </main>

@@ -15,15 +15,19 @@ function About() {
           <div className="about-text">
             <h2>Who I Am</h2>
             <p>
-              Hello! I'm a passionate web developer with a focus on creating beautiful, 
-              functional, and user-friendly websites. With a background in design and 
-              programming, I bring a unique perspective to every project I work on.
+              Hi! I'm a student studying computer science and engineering at the Massachusetts Institute of Technology. 
+              I'm passionate about developing innovative solutions through technology. 
+              Through my internships at Amazon and research in computational biology, 
+              I've gained valuable experience applying technical skills to solve real-world problems.
             </p>
             
             <p>
-              I specialize in frontend development using modern technologies like React, 
-              but I'm also comfortable working with backend technologies to create 
-              full-stack applications.
+              I'm comfortable with full-stack development, having worked on projects that involve both frontend and backend technologies.
+              I've also developed several LLM-based applications, exploring the potential of AI to create intelligent and responsive systems.
+            </p>
+            
+            <p>
+              Apart from my academic interests, I enjoy hiking, photography, and watching all sports.
             </p>
             
             <h2>My Journey</h2>
@@ -36,8 +40,15 @@ function About() {
             
             <h2>Education</h2>
             <div className="education-item">
-              <h3>Bachelor of Science in Computer Science</h3>
-              <p>University Name, 2018-2022</p>
+              <h3>Massachusetts Institute of Technology – Cambridge, MA</h3>
+              <p>Bachelor of Science, Computer Science & Engineering</p>
+              <p>Expected May 2027</p>
+              <p><strong>Relevant courses:</strong> Software Construction, Fundamentals of Programming, Intro to Machine Learning, 
+                Intro to Algorithms, Linear Algebra, Math for Computer Science, Differential Equations, 
+                Intro to Computer Science Programming in Python</p>
+              <p><strong>Honors/Awards:</strong> Amazon Future Engineer Scholar, Lockheed Martin Scholar, 
+                Deloitte Foundation SWE Scholar, California Institute for Regenerative Medicine Scholar, 
+                National Merit Scholar</p>
             </div>
             
             <h2>Skills</h2>

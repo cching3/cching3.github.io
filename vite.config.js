@@ -5,7 +5,6 @@ import path from 'path';
 export default defineConfig({
   plugins: [react()],
   root: path.resolve(__dirname, './'),
-  base: '/',  // Using relative paths for GitHub Pages deployment
   build: {
     outDir: 'dist',
     rollupOptions: {

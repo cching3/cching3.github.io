@@ -58,9 +58,9 @@ function ExperienceBlurbs() {
             </div>
           ))}
         </div>
-        {/* <div className="experience-cta">
-          <a href="/experience" className="btn btn-secondary">View Full Experience</a>
-        </div> */}
+        <div className="experiences-cta">
+          <a href="/#experience" className="btn btn-secondary">View Full Experiences</a>
+        </div>
       </div>
     </section>
   );

@@ -3,10 +3,21 @@
   padding: 5rem 0;
 }
 
+.projects-page {
+  min-height: 100vh;
+}
+
+.projects-container {
+  padding: 3rem 0 6rem;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 2rem;
+  margin-top: 2rem;
 }
 
 /* Project filters */
@@ -42,7 +53,23 @@
 .view-more-container {
   display: flex;
   justify-content: center;
-  margin-top: 3rem;
+  margin: 3rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background-color: var(--primary-color);
+  color: white;
+  text-decoration: none;
+  border-radius: var(--border-radius);
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+.btn:hover {
+  background-color: var(--primary-dark);
+  transform: translateY(-2px);
 }
 
 /* Responsive styles */

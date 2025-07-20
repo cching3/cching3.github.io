@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import Hero from '../sections/Hero.jsx';
-import Projects from '../sections/Projects.jsx';
+import { ProjectSection } from '../sections/Projects.jsx';
 import Contact from '../sections/Contact.jsx';
 import Skills from '../sections/Skills.jsx';
 import ExperienceBlurbs from '../sections/ExperienceBlurbs.jsx';
@@ -23,7 +23,7 @@ function Home() {
           <div className="about-preview-content">
             <div className="about-preview-text">
               <p>
-                 Hi! I'm a student studying computer science and engineering at the Massachusetts Institute of Technology. 
+                 Hi! I'm a rising junior studying computer science and engineering at the Massachusetts Institute of Technology (MIT). 
                  I'm passionate about developing innovative solutions through technology. 
                  Through my internships at Amazon and research in computational biology, 
                  I've gained valuable experience applying technical skills to solve real-world problems.
@@ -48,13 +48,13 @@ function Home() {
                 Deloitte Foundation SWE Scholar, California Institute for Regenerative Medicine Scholar, 
                 National Merit Scholar
               </p>
-              {/* <a href="/about" className="btn btn-primary">Learn More About Me</a> */}
+              <a href="/#/about" className="btn btn-primary">Learn More About Me</a>
             </div>
           </div>
         </div>
       </section>
       <ExperienceBlurbs />
-      <Projects />
+      <ProjectSection />
       <Skills />
       <Contact />
     </>

@@ -1,7 +1,7 @@
 import React from 'react';
 import '../styles/Experience.css';
 
-function Experience() {
+function Experiences() {
   const experience = [
     {
       id: 1,
@@ -115,4 +115,4 @@ function Experience() {
   );
 }
 
-export default Experience;
+export default Experiences;
