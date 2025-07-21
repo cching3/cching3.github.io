@@ -76,11 +76,6 @@ function Contact() {
               </div>
               
               <div className="contact-item">
-                <span className="contact-icon">📱</span>
-                <span className="contact-text">+1 (650) 390-3742</span>
-              </div>
-              
-              <div className="contact-item">
                 <span className="contact-icon">📍</span>
                 <span className="contact-text">Campbell, California</span>
               </div>
@@ -88,7 +83,7 @@ function Contact() {
             
             <div className="social-links">
               <a href="https://github.com/cching3" target="_blank" rel="noopener noreferrer" className="social-link">GitHub</a>
-              <a href="https://linkedin.com/charisching" target="_blank" rel="noopener noreferrer" className="social-link">LinkedIn</a>
+              <a href="https://www.linkedin.com/in/charisching/" target="_blank" rel="noopener noreferrer" className="social-link">LinkedIn</a>
             </div>
           </div>
           
