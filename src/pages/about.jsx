@@ -56,33 +56,62 @@ function About() {
               <div className="skill-category">
                 <h3>Languages</h3>
                 <ul className="skills-list">
-                  <li>Python</li>
-                  <li>JavaScript/TypeScript</li>
-                  <li>HTML/CSS</li>
-                  <li>SQL</li>
+                  <li>Python (pandas, numpy)</li>
                   <li>C++</li>
+                  <li>Java</li>
+                  <li>JavaScript</li>
+                  <li>TypeScript</li>
+                  <li>Julia</li>
                 </ul>
               </div>
               
               <div className="skill-category">
-                <h3>Frameworks & Libraries</h3>
+                <h3>Frontend</h3>
                 <ul className="skills-list">
                   <li>React</li>
                   <li>Next.js</li>
-                  <li>Convex</li>
-                  <li>Streamlit</li>
-                  <li>TailwindCSS</li>
+                  <li>HTML5</li>
+                  <li>CSS3/SASS</li>
+                  <li>Vite</li>
                 </ul>
               </div>
               
               <div className="skill-category">
-                <h3>Tools & Technologies</h3>
+                <h3>Backend</h3>
                 <ul className="skills-list">
+                  <li>Node.js</li>
+                  <li>Express</li>
+                  <li>REST APIs</li>
+                </ul>
+              </div>
+              
+              <div className="skill-category">
+                <h3>Cloud & Tools</h3>
+                <ul className="skills-list">
+                  <li>AWS (Lambda, API Gateway, S3, DynamoDB)</li>
                   <li>Git/GitHub</li>
-                  <li>AWS</li>
-                  <li>Docker</li>
-                  <li>AI/ML Integration</li>
-                  <li>Financial APIs</li>
+                  <li>VS Code</li>
+                  <li>Linux/Ubuntu</li>
+                </ul>
+              </div>
+              
+              <div className="skill-category">
+                <h3>AI/ML & Data</h3>
+                <ul className="skills-list">
+                  <li>PyTorch</li>
+                  <li>Microsoft Copilot</li>
+                  <li>OpenAI API</li>
+                  <li>Jupyter Notebook</li>
+                  <li>Matplotlib</li>
+                </ul>
+              </div>
+              
+              <div className="skill-category">
+                <h3>Design</h3>
+                <ul className="skills-list">
+                  <li>Figma</li>
+                  <li>Adobe XD</li>
+                  <li>Canva</li>
                 </ul>
               </div>
             </div>
