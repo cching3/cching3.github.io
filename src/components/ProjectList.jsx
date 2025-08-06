@@ -37,7 +37,7 @@ function ProjectList() {
       id: 6,
       title: 'This Portfolio Website',
       description: 'The website you are currently viewing. Built with React and modern JavaScript to create an interactive and responsive user experience that showcases my skills and projects.',
-      imageUrl: '/assets/images/profile.jpg',
+      imageUrl: '/assets/images/profile2.jpg',
       link: 'https://github.com/cching3/cching3.github.io',
       technologies: ['React', 'JavaScript', 'CSS'],
       category: 'web'
